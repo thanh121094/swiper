@@ -1,0 +1,49 @@
+.detail-container {
+	width: 100%;
+	float: left;
+	.detail-left {
+		padding-right: 30px;
+		h4 {
+			font-weight: bold;
+			margin-bottom: 10px;
+			text-transform: uppercase;
+		}
+		.detail-content {
+			float: left;
+			margin-top: 30px;
+			p {
+				line-height: 25px;
+	   			margin-bottom: 30px;
+			}
+			img {
+				width: 80%;
+			    margin: 30px 10%;
+			    text-align: center;
+			}
+			.author {
+				float: right;
+				h4 {
+					text-transform: normal;
+					text-align: right;
+				}
+			}
+		}
+		.detail {
+			float: left;
+			width: 100%;
+			li {
+				padding: 30px 0;
+				border-bottom: 1px solid #c3c3c3;
+				a {
+					float: left;
+					width: 100%;
+					margin-bottom: 10px;
+					font-weight: bold;
+					&:hover {
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
+}

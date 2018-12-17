@@ -1,0 +1,93 @@
+html {
+    -ms-overflow-style: scrollbar; //Fix scrollbar transparent at ie10, ie11
+    -webkit-font-smoothing: antialiased; //Adding font smoothing for safari MAC OS
+}
+
+body {
+    font-size: 16px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-family: $OpenSansRegular;
+    overflow-x: hidden;
+    background: $color-white;
+    left: 0;
+    @include transition(left 0.3s ease);
+}
+
+@for $i from 0 to 12 {
+    $n: 12 - $i;
+
+    .col-xs-#{$n},
+    .col-sm-#{$n},
+    .col-md-#{$n},
+    .col-lg-#{$n} {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+a {
+    color: #e05f2e;
+    text-decoration: none;
+    transition: color .1s,background-color .1s;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 0;
+}
+
+ul, ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clear-fix {
+    clear: both;
+}
+
+input {
+    outline: none;
+}
+
+.display-block {
+    display: block !important;
+}
+
+.display-none {
+    display:none !important;
+}
+
+.body-active {
+    position: relative;
+    left: -40%;
+    overflow: hidden;
+}
+
+.overflow-hidden {
+    position: relative;
+    overflow: hidden;
+}
+

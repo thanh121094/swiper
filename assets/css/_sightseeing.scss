@@ -1,0 +1,46 @@
+.sightseeing {
+	h3 {
+		text-align: center;
+		text-transform: uppercase;
+		margin-bottom: 30px;
+	}
+	.form {
+		.box {
+			margin-bottom: 30px;
+			p {
+				font-weight: bold;
+				span {
+					color: red;
+				}
+			}
+			input {
+				width: 100%;
+				padding: 15px;
+			}
+			.box-left {
+				padding-right: 20px;
+			}
+			textarea {
+				resize: none;
+				width: 100%;
+				height: 100px;
+				padding: 15px;
+			}
+		}
+		.submit {
+			float: left;
+		    width: 100%;
+		    text-align: center;
+		    input {
+		    	padding: 15px 30px;
+		    	border-radius: 5px;
+		    	background: #4184c4;
+		    	color: #fff;
+		    	border: none;
+		    	&:hover {
+		    		background: #194c7d;
+		    	}
+		    }
+		}
+	}
+}
